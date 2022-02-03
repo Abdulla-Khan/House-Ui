@@ -1,4 +1,4 @@
-const RE_DATA = [
+const data = [
   {
     "image": "assets/images/image_2.jpg",
     "amount": 200000,

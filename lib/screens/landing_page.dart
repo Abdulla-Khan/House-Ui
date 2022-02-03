@@ -85,9 +85,9 @@ class LandingPage extends StatelessWidget {
                     child: Padding(
                       padding: side,
                       child: ListView.builder(
-                          itemCount: RE_DATA.length,
+                          itemCount: data.length,
                           itemBuilder: (context, index) {
-                            return RealEstate(itemdata: RE_DATA[index]);
+                            return RealEstate(itemdata: data[index]);
                           }),
                     ),
                   )
@@ -139,7 +139,7 @@ class RealEstate extends StatelessWidget {
     final ThemeData tt = Theme.of(context);
 
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
+      margin: const EdgeInsets.symmetric(vertical: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

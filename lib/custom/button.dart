@@ -11,14 +11,14 @@ class OptionButton extends StatelessWidget {
   final double width;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: width,
       child: MaterialButton(
         splashColor: COLOR_WHITE.withAlpha(55),
         minWidth: width,
         color: COLOR_DARK_BLUE,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         onPressed: () {},
         child: Row(
           children: [
@@ -29,7 +29,7 @@ class OptionButton extends StatelessWidget {
             addHorizontalSpace(10),
             Text(
               text,
-              style: TextStyle(color: COLOR_WHITE),
+              style: const TextStyle(color: COLOR_WHITE),
             )
           ],
         ),
